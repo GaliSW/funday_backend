@@ -1,0 +1,71 @@
+nav{
+    width: 250px;
+    min-height: 100%;
+    // height: 100vh;
+    background-color:$navBg;
+    padding: 0 22px;
+    .dialog-blk{
+        margin-top: 15px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+        width: 208px;
+        padding: 10px 20px;
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            color: #fff;
+            margin-bottom: 10px;
+            cursor:default;
+        }
+        .logout-btn{
+            text-align: center;
+            @include border_r;
+            width: 120px;
+            height: 36px;
+            font-size: 16px;
+            line-height: 36px;
+            background-color: #fff;
+            color: #666666;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .back-to-front{
+        @include border_r;
+        margin-top: 30px;
+        background-color: #666666;
+        color: #fff;
+        width: 120px;
+        height: 36px;
+        font-size: 16px;
+        line-height: 36px;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .list-blk{
+        p{
+            margin: 30px 0 0 0 ;
+            font-size: 14px;
+            line-height: 32px;
+            color: rgba(255, 255, 255, 0.7);
+            cursor:default;
+            
+        }
+        ul{
+            margin: 0;
+            padding-left: 22px;
+        }
+        li{
+            font-size: 16px;
+            line-height: 28px;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}

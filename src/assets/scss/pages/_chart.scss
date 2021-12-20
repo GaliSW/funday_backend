@@ -1,0 +1,46 @@
+
+.container{
+    background-color: #F1F2F3;
+    display: flex;
+    @include grids(12);
+}
+
+
+.chart-list{
+    width: calc(100% - 250px);
+    .chart-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        .chart-title{
+            padding-left: calc((100% - 1000px)/4);
+        }
+        .chart-title h1{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            color: #222222;
+        }
+        .chart-time-blk{
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .chart-time{
+            position: absolute;
+            right:calc((100% - 1000px)/4);
+            display: flex;
+            vertical-align: middle;
+            font-size: 16px;
+            line-height: 32px;
+            color: #AAAAAA;
+        }
+        .chart-time label{
+            margin:0 15px;
+            vertical-align: middle;
+        }
+        .chart-time select{
+            width: 120px;
+            height: 36px;
+            @include border_r;
+        }
+    }
+}

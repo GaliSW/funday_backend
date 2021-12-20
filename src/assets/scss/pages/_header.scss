@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    height: 100px;
+    .bm-logo{
+        width: 400px;
+        margin-left: 31px;
+        margin-top: 14px;
+    }
+    .bm-title-blk{
+        position: absolute;
+        right: 35px;
+        top: 24px;
+        line-height: 26px;
+        text-align: right;
+        color: #555555;
+        .bm-title h1{
+            margin: 0;
+            font-size: 22px;
+            font-weight: 700;
+            cursor:default;
+        }
+        .bm-title h2{
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            cursor:default;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+//置中
+@mixin center {
+    margin: 0 auto;
+}
+
+//圓角
+@mixin border_r{
+    border-radius: 4px;
+}
+
+//框線
+
+@mixin  border {
+    border: 1px solid red;
+}
