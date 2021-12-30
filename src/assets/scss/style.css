@@ -1,12 +1,251 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.none {
+  display: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.account-blk {
+  margin: 0 auto;
+  height: 100vh;
+  width: 1080px;
+}
+
+.account-blk .account-title h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #222222;
+}
+
+.account-blk .search-blk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.account-blk .search-blk h1 {
+  font-size: 16px;
+  line-height: 36px;
+  color: #aaaaaa;
+  margin-right: 10px;
+}
+
+.account-blk .search-blk input {
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.account-blk .search-blk div {
+  border-radius: 4px;
+  width: 120px;
+  height: 36px;
+  background: #666666;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.account-blk .para {
+  font-size: 16px;
+  line-height: 32px;
+  color: #aaaaaa;
+}
+
+.account-blk .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-blk .tab label,
+.account-blk .tab select {
+  display: block;
+  text-align: center;
+  width: 166px;
+  height: 46px;
+  background: rgba(196, 196, 196, 0.7);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 46px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.account-blk .tab input:checked ~ label,
+.account-blk .tab input:checked ~ select {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff)), #c4c4c4;
+  background: linear-gradient(0deg, #ffffff, #ffffff), #c4c4c4;
+  color: #222222;
+}
+
+.account-blk .user-label {
+  position: relative;
+}
+
+.account-blk .user-option {
+  position: absolute;
+  width: 166px;
+  border: 1px solid #d2d2d2;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.account-blk .user-option ul {
+  padding: 8px 0;
+  margin: 0;
+}
+
+.account-blk .user-option li {
+  margin: 0 auto;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  list-style: none;
+  font-size: 16px;
+  line-height: 46px;
+  color: #222;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.account-blk .user-option li:hover {
+  background: rgba(196, 196, 196, 0.7);
+}
+
+.account-blk .account-list {
+  background-color: #fff;
+  padding: 20px 35px;
+}
+
+.account-blk .account-list .delete-blk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.account-blk .account-list .delete-blk .btn {
+  width: 120px;
+  height: 36px;
+  background: #666666;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.account-blk .account-list .delete-blk .alert {
+  font-size: 16px;
+  line-height: 32px;
+  color: #aaaaaa;
+  margin-left: 12px;
+}
+
+.account-blk .account-list .delete-blk .limit {
+  font-size: 16px;
+  line-height: 32px;
+  color: #666666;
+}
+
+.account-blk .account-list .delete-blk .now {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: right;
+}
+
+.account-blk .account-list table {
+  width: 100%;
+}
+
+.account-blk .account-list table th {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #666666;
+  height: 50px;
+}
+
+.account-blk .account-list table tr:nth-child(2n) {
+  background: rgba(221, 221, 221, 0.3);
+}
+
+.account-blk .account-list table .td td {
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #aaaaaa;
+  padding: 0;
+  height: 50px;
+}
+
+.account-blk .account-list table .td td:first-child {
+  color: #555555;
+}
+
+.account-blk .account-list table .all input {
+  visibility: hidden;
+}
+
+.account-blk .account-list table .all label {
+  display: inline-block;
+  border: 2px solid #aaaa;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.account-blk .account-list table .all input:checked ~ label {
+  background-color: #222222;
+}
+
+.account-blk .account-list table .check-one input {
+  visibility: hidden;
+}
+
+.account-blk .account-list table .check-one label {
+  display: inline-block;
+  border: 2px solid #aaaa;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.account-blk .account-list table .check-one input:checked ~ label {
+  background-color: #222222;
 }
 
 .header {
@@ -151,6 +390,282 @@ body {
   border-radius: 4px;
 }
 
+.export-blk {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.export-blk .export-title h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #222222;
+}
+
+.export-blk .export-btn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#666666), to(#666666));
+  background: linear-gradient(0deg, #666666, #666666);
+  border-radius: 4px;
+  width: 200px;
+  height: 46px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 46px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.export-blk .export-teach {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1080px;
+  height: 110px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.export-blk .export-teach .sub-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #222222;
+  padding-left: 25px;
+  cursor: default;
+}
+
+.export-blk .export-teach .export-date {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+.export-blk .export-teach .picker {
+  width: 200px;
+  height: 46px;
+  background: #eeeeee;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.export-blk .export-teach label {
+  margin-right: 20px;
+}
+
+.group-blk {
+  margin: 0 auto;
+  height: 100vh;
+  width: 1080px;
+}
+
+.group-blk .group-title h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #222222;
+}
+
+.group-blk .group-date {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+.group-blk .group-date .group-btn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#666666), to(#666666));
+  background: linear-gradient(0deg, #666666, #666666);
+  border-radius: 4px;
+  width: 120px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.group-blk .group-date .left {
+  margin-right: 30px;
+}
+
+.group-blk .group-date .picker {
+  width: 200px;
+  height: 36px;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.group-blk .group-date label {
+  margin-right: 20px;
+}
+
+.group-blk .group-list {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 35px;
+}
+
+.group-blk .group-list table {
+  width: 100%;
+}
+
+.group-blk .group-list table th {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #666666;
+  height: 50px;
+}
+
+.group-blk .group-list table tr:nth-child(2n) {
+  background: rgba(221, 221, 221, 0.3);
+}
+
+.group-blk .group-list table .td td {
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #aaaaaa;
+  padding: 0;
+  height: 50px;
+}
+
+.group-blk .group-list table .td td:first-child {
+  color: #555555;
+}
+
+.login-search-blk {
+  margin: 0 auto;
+  height: 100vh;
+  width: 1080px;
+}
+
+.login-search-blk .login-search-title h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #222222;
+}
+
+.login-search-blk .login-date {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+.login-search-blk .login-date .login-btn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#666666), to(#666666));
+  background: linear-gradient(0deg, #666666, #666666);
+  border-radius: 4px;
+  width: 120px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.login-search-blk .login-date .picker {
+  width: 200px;
+  height: 36px;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.login-search-blk .login-date label {
+  margin-right: 20px;
+}
+
+.login-search-blk .login-list {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 35px;
+}
+
+.login-search-blk .login-list table {
+  width: 100%;
+}
+
+.login-search-blk .login-list table th {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #666666;
+  height: 50px;
+}
+
+.login-search-blk .login-list table tr:nth-child(2n) {
+  background: rgba(221, 221, 221, 0.3);
+}
+
+.login-search-blk .login-list table .td td {
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #aaaaaa;
+  padding: 0;
+  height: 50px;
+}
+
+.login-search-blk .login-list table .td td:first-child {
+  color: #555555;
+}
+
 nav {
   width: 250px;
   min-height: 100%;
@@ -227,5 +742,185 @@ nav .list-blk li {
   color: white;
   font-weight: 700;
   cursor: pointer;
+}
+
+.time-blk {
+  margin: 0 auto;
+  height: 100vh;
+  width: 1080px;
+}
+
+.time-blk .time-title h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #222222;
+}
+
+.time-blk .time-tab {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-blk .time-tab label {
+  display: block;
+  text-align: center;
+  width: 166px;
+  height: 46px;
+  background: rgba(196, 196, 196, 0.7);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 46px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.time-blk .time-tab input:checked ~ label {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff)), #c4c4c4;
+  background: linear-gradient(0deg, #ffffff, #ffffff), #c4c4c4;
+  color: #222222;
+}
+
+.time-blk .time-tab .search-blk {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-blk .time-tab .search-blk h1 {
+  font-size: 16px;
+  line-height: 36px;
+  color: #aaaaaa;
+  margin-right: 10px;
+}
+
+.time-blk .time-tab .search-blk input {
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.time-blk .time-tab .search-blk div {
+  border-radius: 4px;
+  width: 120px;
+  height: 36px;
+  background: #666666;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.time-blk .time-list {
+  background-color: #fff;
+  padding: 35px;
+}
+
+.time-blk .time-list .btn-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  height: 36px;
+}
+
+.time-blk .time-list .btn {
+  width: 120px;
+  height: 36px;
+  background: #666666;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+}
+
+.time-blk .time-list table {
+  width: 100%;
+}
+
+.time-blk .time-list table th {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #666666;
+  height: 50px;
+}
+
+.time-blk .time-list table tr:nth-child(2n) {
+  background: rgba(221, 221, 221, 0.3);
+}
+
+.time-blk .time-list table .td td {
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #aaaaaa;
+  padding: 0;
+  height: 50px;
+}
+
+.time-blk .time-list table .td td:first-child {
+  color: #555555;
+}
+
+.pagination {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination p {
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #aaaaaa;
+}
+
+.pagination #page {
+  font-size: 20px;
+}
+
+.pagination select {
+  background-color: #fff;
+  width: 120px;
+  height: 36px;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(85, 85, 85, 0.5);
+}
+
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  color: #aaaaaa;
 }
 /*# sourceMappingURL=style.css.map */

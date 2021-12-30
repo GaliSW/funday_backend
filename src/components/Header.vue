@@ -2,7 +2,7 @@
     <header id="app" class="header">
         <div class="bm-logo col-3">
             <a href="">
-                <img src="../assets/images/FUNDAY_logo.png" alt="FUNDAY_logo">
+                <img :src="logo" alt="FUNDAY_logo">
             </a>
         </div>
         <div class="bm-title-blk">
@@ -15,7 +15,13 @@
 </template>
 
 <script>
+import logo from '../assets/images/FUNDAY_logo.svg';
 export default {
-    name: 'myHeader'
+    name: 'myHeader',
+    data() {
+        return {
+            logo
+        }
+    },
 }
 </script>

@@ -1,0 +1,64 @@
+.export-blk {
+    @include center;
+    height: 100vh;
+    .export-title h1 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #222222;
+    }
+    .export-btn {
+        background: linear-gradient(0deg, #666666, #666666);
+        @include border_r;
+        width: 200px;
+        height: 46px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 46px;
+        text-align: center;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .export-teach {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        width: 1080px;
+        height: 110px;
+        background: #ffffff;
+        @include border_r;
+        .sub-title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            color: #222222;
+            padding-left: 25px;
+            cursor: default;
+        }
+        .export-date {
+            align-items: center;
+            display: flex;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 32px;
+            color: #aaaaaa;
+            cursor: pointer;
+        }
+        .picker {
+            width: 200px;
+            height: 46px;
+            background: #eeeeee;
+            @include border_r;
+            font-size: 14px;
+            line-height: 32px;
+            text-align: center;
+            margin-right: 20px;
+            cursor: pointer;
+            border: none;
+        }
+        label {
+            margin-right: 20px;
+        }
+    }
+}
